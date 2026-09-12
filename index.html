@@ -140,7 +140,7 @@ a{color:var(--accent)}
 .facts div{
   padding:16px 20px 20px;border-right:1px solid var(--rule-2);
 }
-.facts div:last-child{border-right:0}
+.facts div:last-child{border-right:0}.decision{margin-top:28px;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;border:1px solid var(--c);border-radius:3px;padding:16px 20px;background:var(--surface)}.decision .dlabel{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--c)}.decision p{margin:0;font-size:15px;color:var(--ink-2)}.decision p strong{color:var(--ink)}.decision a{white-space:nowrap;text-decoration:none;font-family:var(--f-display);font-weight:650;font-size:14px;color:var(--c)}.decision a em{font-style:normal;font-family:var(--f-mono)}@media(max-width:760px){.decision{grid-template-columns:1fr}}
 .facts dt{
   font-family:var(--f-mono);font-size:10.5px;letter-spacing:.15em;
   text-transform:uppercase;color:var(--ink-3);margin-bottom:6px;
@@ -424,7 +424,7 @@ footer code{font-family:var(--f-mono);font-size:12.5px;color:var(--ink-2)}
 @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 </style>
 
-<body data-route="hokkaido">
+<body data-route="tokyo">
 
 <header class="board">
   <div class="wrap">
@@ -438,6 +438,11 @@ footer code{font-family:var(--f-mono);font-size:12.5px;color:var(--ink-2)}
       <div><dt>Аренда авто</dt><dd>Не нужна нигде</dd></div>
       <div><dt>Виза</dt><dd>Одна или ни одной</dd></div>
     </dl>
+    <div class="decision" style="--c:var(--tokyo)">
+      <span class="dlabel">Решение</span>
+      <p><strong>Основной план — Токио + Гонконг.</strong> Билеты Москва → Токио куплены. Дальше по порядку: Токио → Гонконг, Гонконг → Москва, отель в Токио на 11 ночей, японская виза.</p>
+      <a href="tokyo-hongkong.html">Открыть план <em>→</em></a>
+    </div>
   </div>
 </header>
 
@@ -531,6 +536,8 @@ footer code{font-family:var(--f-mono);font-size:12.5px;color:var(--ink-2)}
       <p class="chain">Токио → шесть выездов → Гонконг</p>
       <p>Один отель на 11 ночей вместо пяти переездов: десять полных дней в Токио, однодневные выезды от Камакуры до Никко и рождественский финал в Гонконге.</p>
       <div class="chips">
+        <span class="chip chip--on">Основной план</span>
+        <span class="chip chip--on">Москва → Токио куплено</span>
         <span class="chip chip--on">Christmas 8/10</span>
         <span class="chip">Одна виза</span>
         <span class="chip">2 отеля</span>
